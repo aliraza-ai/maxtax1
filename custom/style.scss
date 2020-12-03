@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap');
+$color2:#af090d;
+$color1:#282a7d;
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+.nav
+{
+   nav
+   {
+    .nav-link,.dropdown-item
+    {
+        color:$color1 !important;
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 600;
+        font-size: 12px !important;
+        text-transform: uppercase;
+        
+    }
+
+    .nav-link
+    {
+        margin: 0 13px;
+    }
+    .btn-outline-success
+    {
+        color: $color1 !important;
+        border: $color1 1px solid;
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 600;
+        font-size: 11px !important;
+        text-transform: uppercase;
+    }
+    .btn-outline-success:hover
+    {
+        background-color: $color1;
+        color: white !important;
+    }
+    .home
+    {
+        color: $color2 !important;
+    }
+
+    
+   }
+}
+
+// header area
+
+.header
+{
+    background-image: url("../img/header.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 13.5% 0;
+    
+    h3,h5
+    {
+        font-family: 'Montserrat', sans-serif !important;
+        color: white;
+        
+    }
+    h3
+    {
+        font-size: 40px;
+    }
+    h5
+    {
+        font-size: 18px;
+    }
+    .btn
+    {
+        background-color: $color2;
+        font-family: 'Montserrat', sans-serif !important;
+        color: white;
+        margin-top: 10px;
+        padding: 8px 34px;
+        font-size: 12px;
+    }
+    
+}
+
+//first area
+.first-area
+{
+    background-image: url("../img/header4.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 13.5% 0;
+
+    h1
+    {
+        margin: 0;
+    }
+    p
+    {
+        margin-bottom: 0;
+        font-size: 26px;
+    }
+}
+
+// second area
+.second
+{
+    background-image: url("../img/header2.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 13.5% 0;
+
+    h6
+    {
+        margin-bottom: 0px;
+        font-size: 34px;
+    }
+    
+
+}
+
+//peronal area
+.personal
+{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    h2
+    {
+        color: #47225e;
+    }
+    p
+    {
+        color: #a195aa;
+        font-size: 13px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 140px;
+    }
+    .btn
+    {
+        color: white !important;
+        font-size: 11px;
+    }
+
+}
+
+//credit
+
+.credit
+{
+    font-family: 'Montserrat', sans-serif;
+   
+    h2
+    {
+        color: #47225e;
+    }
+    p
+    {
+        color: #a195aa;
+        font-size: 13px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 70px;
+    }
+    .btn
+    {
+        color: white !important;
+        background-color: #282a7d !important;
+        font-size: 11px;
+        border: none;
+    }
+
+}
+
+//no credit
+
+.no-credit
+{
+
+    background-image: url("../img/header3.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 13.5% 0;
+    text-align: center;
+
+    
+    h1,p,p{
+        margin: 0;
+        padding: 0;
+    }
+    p
+    {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .p1
+    {
+        font-size: 22px;
+    }
+    h1
+    {
+        font-weight: 700;
+    }
+    h2
+    {
+        font-weight: 600;
+    }
+
+    
+    
+
+}
+
+//green dot
+.green-dot
+{
+    font-family: 'Montserrat', sans-serif;
+   
+    h2
+    {
+        color: #282a7d;
+        text-transform: uppercase;
+    }
+    p
+    {
+        color: #282a7d;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 40px;
+    }
+    
+}
+
+//checks
+
+.checks
+{
+    font-family: 'Montserrat', sans-serif;
+   
+    h2
+    {
+        color: #282a7d;
+        text-transform: uppercase;
+    }
+    p
+    {
+        color: #282a7d;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 90px;
+    }
+}
+
+//hotline
+.hotline
+{
+
+    font-family: 'Montserrat', sans-serif;
+   
+    h2
+    {
+        color: #282a7d;
+        text-transform: uppercase;
+    }
+    p
+    {
+        color: #282a7d;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 70px;
+    }
+
+}
+
+//slider
+.slider
+{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    h1
+    {
+        font-size: 28px;
+        color: $color1;
+        font-weight: 700;
+    }
+    p
+    {
+        font-size: 10px;
+    }
+
+
+    @media (max-width: 300px) {
+        .carosel-item {
+          width: 100%;
+        }
+      }
+      @media (min-width: 300px) {
+        .carosel-item {
+          width: 50%;
+        }
+      }
+      @media (min-width: 500px) {
+        .carosel-item {
+          width: 33.333%;
+        }
+      }
+      @media (min-width: 768px) {
+        .carosel-item {
+          width: 25%;
+        }
+      }
+      .carosel {
+        position: relative;
+        background-color: #000;
+      }
+      .carosel-inner {
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 0;
+      }
+      .carosel-item {
+        display: inline-block;
+      }
+      .carosel-control {
+        position: absolute;
+        top: 50%;
+        padding: 15px;
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        color: rgba(0, 0, 0, 0.5);
+      
+        display: inline-block;
+      }
+      .carosel-control-left {
+        left: 15px;
+      }
+      .carosel-control-right {
+        right: 15px;
+      }
+      .carosel-control:active,
+      .carosel-control:hover {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.8);
+      }
+
+      .items {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 100px
+}
+
+.slick-slide {
+    margin: 10px
+}
+
+.slick-slide img {
+    width: 100%;
+    border: 0px solid #fff
+}
+    
+}
+
+//mobile area
+.mobile
+{
+    font-family: 'Montserrat', sans-serif;
+   margin-top: 100px;
+    h2
+    {
+        color: $color2;
+        text-transform: uppercase;
+    }
+    p
+    {
+        color: #282a7d;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 40px;
+    }
+
+    .data
+    {
+        margin-top: 30px;
+        b
+        {
+            color: $color1;
+        }
+        p
+        {
+            font-size: 12px;
+        }
+    }
+}
+
+//faq
+.faq
+{
+    margin-bottom: 100px;
+
+    .accordion_container {
+        width: 300px;
+   }
+   .accordion_head {
+       background-color:white;
+       border-top: 1px solid silver;
+       color: $color1;
+       cursor: pointer;
+       font-family: arial;
+       font-size: 10px;
+       margin: 0 0 1px 0;
+       padding: 7px 11px;
+       font-weight: bold;
+   }
+   .accordion_body {
+       background: white;
+   }
+   .accordion_body p{
+       padding: 18px 5px;
+       margin: 0px;
+   }
+   .plusminus{
+       float:right;
+   }
+    font-family: 'Montserrat', sans-serif;
+   
+    h2
+    {
+        color: #282a7d;
+        text-transform: uppercase;
+    }
+    p
+    {
+        color: #282a7d;
+        font-size: 10px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 40px;
+    }
+
+    .btn-outline-success
+    {
+        color: $color1 !important;
+        border: $color1 1px solid;
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 600;
+        font-size: 11px !important;
+        text-transform: uppercase;
+        
+        display: block;
+       
+    }
+    .me
+    {
+        margin-bottom: 8px;
+        margin-left: 10px;
+    }
+    .btn-outline-success:hover
+    {
+        background-color: $color1;
+        color: white !important;
+    }
+    .line
+    {
+        height: 1px;
+        color: silver;
+        width: 100%;
+    }
+}
+
+//footer area
+.footer
+{
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #f6f3fe;
+    padding: 50px 0;
+    .about
+    {
+        font-size: 13px;
+        line-height: 23px;
+        margin-top: 17px;
+        color: #7a7ab1;
+    }
+    h6
+    {
+        color: $color2;
+        font-weight: bold;
+    }
+    li
+    {
+        list-style: none;
+        color: $color1;
+        font-weight: 600;
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    .btn-outline-success
+    {
+        color: $color1 !important;
+        border: $color1 1px solid;
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 600;
+        font-size: 11px !important;
+        text-transform: uppercase;
+        
+        display: block;
+       
+    }
+    .me
+    {
+        margin-bottom: 8px;
+    }
+    .btn-outline-success:hover
+    {
+        background-color: $color1;
+        color: white !important;
+    }
+    .contact
+    {
+        font-family: 'Montserrat', sans-serif !important;
+        color: $color1;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+
+    //
+    
+}
+
+
+
+//media queries
+
+/* Meida Quries Mobiles */
+@media (max-width: 760px) {
+    .header
+    {
+
+        h3
+        {
+            font-size: 16px !important;
+        }
+        h5
+        {
+            font-size: 12px;
+        }
+        .btn
+        {
+            margin-top: 4PX;
+        padding: 4px 4px;
+        font-size: 10px;
+        }
+    }
+
+    //first area
+    .first-area
+    {
+        h1
+        {
+            margin: 0;
+            font-size: 18px;
+        }
+        p
+        {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+    }
+
+
+    // second area
+    .second
+    {
+
+    h6
+    {
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+    h1
+    {
+        font-size: 22px;
+    }
+    
+
+    }
+
+    //peronal area
+    .personal
+    {
+
+    h2
+    {
+        color: #47225e;
+        text-align: center;
+    }
+    p
+    {
+        color: #a195aa;
+        font-size: 13px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 20px;
+    }
+
+    
+    
+
+    }
+    
+    //credit
+    .credit
+    {
+
+    h2
+    {
+        color: #47225e;
+    }
+    p
+    {
+        color: #a195aa;
+        font-size: 13px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 10px;
+    }
+     
+    img
+    {
+        display: none;
+    }
+    .btn
+    {
+        margin-top: -60px;
+    }
+
+    }
+
+    //no credit
+
+    .no-credit
+    {
+        margin-top: -10px;
+    p
+    {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .p1
+    {
+        font-size: 17px;
+    }
+    h1
+    {
+        font-weight: 700;
+        font-size: 22px;
+    }
+    h2
+    {
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+
+    }   
+
+
+    //green dot
+    .green-dot
+    {
+    h2
+    {
+        text-align: center;
+    }
+    p
+    {
+        color: #282a7d;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 20px;
+    }
+    
+    }
+
+    //checks
+
+    .checks
+    {
+    
+    h2
+    {
+        font-size: 26px;
+        text-align: center;
+    }
+    p
+    {
+        color: #282a7d;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 10px;
+    }
+    img
+    {
+        display: none;
+    }
+    }
+
+    //hotline
+    .hotline
+    {
+
+
+    h2
+    {
+        font-size: 29px;
+        
+    }
+    p
+    {
+        color: #282a7d;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .content
+    {
+        margin-top: 10px;
+    }
+    img
+    {
+        display: none;
+    }
+    }
+
+    //silder
+    .slider
+    {
+        margin-top: 10px;
+        h1
+        {
+            font-size: 22px;
+        }
+    }
+    //mobile area
+    .mobile
+    {
+        
+        margin-top: 10px;
+        h2
+        {
+            font-size: 24px;
+        }
+        .content
+        {
+            margin-top: 40px;
+        }
+
+        .data
+        {
+            margin-top: 30px;
+            b
+            {
+                color: $color1;
+                margin-left: 20px;
+            }
+            p
+            {
+                font-size: 12px;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    //faq
+    .faq
+    {
+        img
+        {
+            display: none;
+        }
+    }
+
+
+    
+}
+    
+/* Meida Quries IPad */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) 
+{
+  
+       
+    
+} 
+
+ /* Media Quries IPad Pro */
+@media only screen 
+ and (min-device-width: 1024px) 
+ and (max-device-width: 1366px) 
+ and (-webkit-min-device-pixel-ratio: 2)
+      {
+         
+        
+      }
+      

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.one {
+  background-color: #282a7d;
+  padding-left: 60px;
+  color: white;
+}
+
+.one img {
+  margin-top: 100px;
+}
+
+.one .content {
+  margin-top: 30px;
+}
+
+.one .input {
+  background-color: #282a7d !important;
+  border: 2px solid white !important;
+  border-radius: 5px;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 14px;
+  width: 300px;
+  line-height: 35px;
+}
+
+.one textarea:focus, .one input:focus {
+  outline: none;
+}
+
+.one ::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+.one :-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+.one ::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+.one ::placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+.one .btn {
+  background-color: #af090d;
+  color: white;
+  width: 300px;
+}
+
+.row {
+  height: 100vh;
+}
+
+.two {
+  background-image: url("../img/sign.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  color: white;
+  padding-top: 20%;
+  padding-bottom: 15%;
+}
+
+.two .content {
+  padding-left: 20px;
+}
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap');
+$color2:#af090d;
+$color1:#282a7d;
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+   
+}
+.one
+{
+    background-color: #282a7d;
+    padding-left: 60px;
+    color: white;
+    img
+    {
+        margin-top: 100px;
+    }
+    .content
+    {
+        margin-top: 30px;
+    }
+    .input
+    {
+        background-color: #282a7d !important;
+        border: 2px solid white !important;
+        border-radius: 5px;
+        color: white;
+        padding-left: 10px;
+        margin-bottom: 14px;
+        width: 300px;
+        line-height: 35px;
+        
+    }
+    textarea:focus, input:focus{
+        outline: none;
+    }
+    ::placeholder {
+        color: white;
+        opacity: 1; /* Firefox */
+      }
+
+      .btn
+      {
+          background-color: $color2;
+          color: white;
+          width: 300px;
+      }
+}
+.row
+{
+    height: 100vh;
+}
+.two
+{
+    background-image: url("../img/sign.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    color:white;
+    padding-top: 20%;
+ 
+    padding-bottom: 15%;
+
+    .content
+    {
+        padding-left: 20px;
+    }
+        
+}
