@@ -1,3 +1,9 @@
+<?php
+include_once "classes/session.php";
+Session::init();
+// echo $_SESSION['adminlogin'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,10 +46,25 @@
                 </li>
               
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="LOGIN">&nbsp;&nbsp;&nbsp;
-                <input class="btn btn-outline-success my-2 my-sm-0" type="submit"  value="REGISTER">
-              </form>
+              <!-- <form class="form-inline my-2 my-lg-0"> -->
+                  <?php
+                  if(isset($_SESSION['adminlogin'])){ ?>
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="#">MY ACCOUNT</a>&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="?action=logout">LOGOUT</a>
+
+                    <?php
+                            if (isset($_GET['action']) && $_GET['action']=="logout") {
+                                session::destroy();
+                            }
+                            ?>
+                  <?php }else{ ?>
+
+                    <!-- <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="LOGIN">&nbsp;&nbsp;&nbsp;
+                    <input class="btn btn-outline-success my-2 my-sm-0" type="submit"  value="REGISTER"> -->
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="login.php">LOGIN</a>&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="register.php">REGISTER</a>
+                    <?php } ?>
+                <!-- </form> -->
             </div>
           </nav>
     </section>
