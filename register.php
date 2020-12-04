@@ -3,13 +3,17 @@ include_once 'classes/adminLogin.php';
 include_once 'classes/session.php';
 Session::checkLogin();
 $msg="";
-if(isset($_POST['login']))
+if(isset($_POST['register']))
 {
     $Login=new adminlogin();
-    $adminEmail=$_POST['email'];
-    $adminPass=$_POST['password'];
-    $msg = $Login->adminLogin($adminEmail, $adminPass);
-
+    $username=$_POST['username'];
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+    $msg = $Login->register($username,$email,$password);
+    if($msg="Register Successfully"){
+        echo "<script>alert('Register Successfully')</script>";
+        echo '<script>window.location.replace("login.php")</script>';
+    }
 }
 
 ?>
@@ -33,7 +37,7 @@ if(isset($_POST['login']))
 
           <div class="content">
             <h1>
-              Login To <br>
+              Create <br>
               Your Account
             </h1>
             <br>
@@ -41,10 +45,11 @@ if(isset($_POST['login']))
             if(isset($_POST['login']))
                 echo"<span style='color: red; font-weight: bold;'>$msg</span>";
             ?>
-            <form method="POST" action="">
-                <input type="text" class="input" name="email" placeholder="Your Email"><br>
-                <input type="password" class="input" name="password" placeholder="Your Password"><br>
-                <input type="submit" name="login" class="btn" value="Login">
+            <form method="post" action="">
+                <input type="text" required name="username" class="input" placeholder="Your Name"><br>
+                <input type="email" required name="email" class="input" placeholder="Your Email"><br>
+                <input type="password" required name="password" class="input" placeholder="Your Password"><br>
+                <input type="submit" name="register" class="btn" value="Create Your Account">
             </form>
           </div>
         </div>

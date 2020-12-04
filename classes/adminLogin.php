@@ -10,18 +10,35 @@ class adminlogin
 	{
 		$this->db=new Database();
 		$this->fm=new Format();
-	}
-	public function adminLogin($adminUser,$adminPass)
+    }
+    
+	public function register($username,$email,$password){
+        $username=$this->fm->validation($username);
+        $email=$this->fm->validation($email);
+        $password=$this->fm->validation($password);
+
+        $query="insert into tb_user(user_name, user_email, user_pass) values('$username', '$email', '$password' ) ";
+        $result=$this->db->insert($query);
+        if (empty($result))
+        {
+            $msg="Register Successfully";
+            return $msg;
+        }else{
+            $msg="Register Not Successfully";
+            return $msg;
+        }
+    }
+	public function adminLogin($adminEmail,$adminPass)
     {
-        $adminUser=$this->fm->validation($adminUser);
+        $adminEmail=$this->fm->validation($adminEmail);
         $adminPass=$this->fm->validation($adminPass);
-        if (empty($adminUser) || empty($adminPass))
+        if (empty($adminEmail) || empty($adminPass))
         {
             $loginmsg="Username or Password must not be empty!";
             return $loginmsg;
         }else
         {
-         $query="select *from tb_user where user_name='$adminUser' AND user_pass='$adminPass'";
+         $query="select *from tb_user where user_email='$adminEmail' AND user_pass='$adminPass'";
          $result=$this->db->select($query);
          if($result!=false)
          {
