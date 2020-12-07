@@ -84,10 +84,10 @@ Session::init();
         <a class="btn btn-outline-success d-block my-sm-1" href="tax-preparer-backoffice.php">TAX PREPARER BACKOFFICE</a>
         <a href="?action=logout"><b>Logout</b></a>
         <?php
-                            if (isset($_GET['action']) && $_GET['action']=="logout") {
-                                session::destroy();
-                            }
-                            ?>
+        if (isset($_GET['action']) && $_GET['action']=="logout") {
+            session::destroy();
+        }
+        ?>
       </div>
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
