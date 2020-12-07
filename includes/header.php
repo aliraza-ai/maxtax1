@@ -50,13 +50,9 @@ Session::init();
                   <?php
                   if(isset($_SESSION['adminlogin'])){ ?>
                     <a class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal" href="#">MY ACCOUNT</a>&nbsp;&nbsp;&nbsp;
-                    <a class="btn btn-outline-success my-2 my-sm-0" href="?action=logout">LOGOUT</a>
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="#">CART (0)</a>
 
-                    <?php
-                            if (isset($_GET['action']) && $_GET['action']=="logout") {
-                                session::destroy();
-                            }
-                            ?>
+                    
                   <?php }else{ ?>
 
                     <!-- <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="LOGIN">&nbsp;&nbsp;&nbsp;
@@ -86,6 +82,12 @@ Session::init();
         <a class="btn btn-outline-success d-block my-sm-1" href="managers-backoffice.php">MANAGERS BACKOFFICE</a>
         <a class="btn btn-outline-success d-block my-sm-1" href="owners-quick-start-here.php">OWNERS QUICK START HERE</a>
         <a class="btn btn-outline-success d-block my-sm-1" href="tax-preparer-backoffice.php">TAX PREPARER BACKOFFICE</a>
+        <a href="?action=logout"><b>Logout</b></a>
+        <?php
+                            if (isset($_GET['action']) && $_GET['action']=="logout") {
+                                session::destroy();
+                            }
+                            ?>
       </div>
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
