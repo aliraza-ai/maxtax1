@@ -28,7 +28,18 @@ Session::init();
                     MORE
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item my-sm-2" href="buy-tradelines.php">BUY TRADELINES</a>
+                    <a class="dropdown-item my-sm-2" href="#">PERSONAL TAXES</a>
+                    <a class="dropdown-item my-sm-2" href="#">FRANCHISING</a>
+                    <a class="dropdown-item my-sm-2" href="affiliate-login.php">AFFILIATE LOGIN</a>
+                    <a class="dropdown-item my-sm-2" href="#">ABOUT US</a>
+                    <a class="dropdown-item my-sm-2" href="#">CONTACT</a>
+                    <a class="dropdown-item my-sm-2" href="#">TAX PREP UPFRONT FEE</a>
+                    <a class="dropdown-item my-sm-2" href="#">MTA TAX SOFTWARE&reg;<br>(CROSSLINK)</a>
+                    <a class="dropdown-item my-sm-2" href="tax-preparer-backoffice.php">TAX PREPARER <br>BACKOFFICE</a>
+                    <a class="dropdown-item my-sm-2" href="managers-backoffice.php">MANAGERS BACKOFFICE</a>
+                    <a class="dropdown-item my-sm-2" href="owner-quick-start-here.php">ONWERS QUICK START HERE</a>
+                    <a class="dropdown-item my-sm-2" href="#">NEW CLIENT START HERE</a>
                   </div>
                 </li>
               
