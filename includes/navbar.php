@@ -30,6 +30,7 @@ Session::init();
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item my-sm-2" href="buy-tradelines.php">BUY TRADELINES</a>
                     <a class="dropdown-item my-sm-2" href="#">PERSONAL TAXES</a>
+                    <a class="dropdown-item my-sm-2" href="business-taxes.php">BUSSINESS TAXES</a>
                     <a class="dropdown-item my-sm-2" href="#">FRANCHISING</a>
                     <a class="dropdown-item my-sm-2" href="affiliate-login.php">AFFILIATE LOGIN</a>
                     <a class="dropdown-item my-sm-2" href="#">ABOUT US</a>
