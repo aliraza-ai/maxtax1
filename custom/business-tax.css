@@ -1,0 +1,48 @@
+.business-section {
+  height: 554px;
+  vertical-align: middle;
+  background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: 100%;
+  background-color: transparent;
+  background-size: cover;
+}
+.business-section h2{
+    padding-top: 120px;
+    text-align: center;
+    font-size: 90px;
+    color: white;
+}
+.business-section p{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+.content{
+    padding:50px 0;
+}
+.content p{
+    color: #858785;
+    line-height: 30px;
+}
+.content h2{
+    font-weight: 700;
+    color: #818181;
+    font-size: 24px;
+    padding:20px 0;
+}
+
+/* Meida Quries Mobiles */
+@media (max-width: 760px) {
+    .business-section{
+        height: 200px;
+     }
+    .business-section h2 {
+        padding-top: 40px;
+        font-size: 24px;
+     }
+     .business-section p {
+        font-size: 12px;
+     }
+}
