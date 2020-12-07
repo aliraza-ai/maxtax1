@@ -1,22 +1,9 @@
 <?php
-// include_once 'classes/adminLogin.php';
 include_once 'classes/session.php';
 Session::init();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="custom/style.css">
-    <title>Managers Back Office</title>
-</head>
-<body>
-    <!-- Here is Nav -->
-    <!-- Here is Nav -->
-    <section class="nav">
+  <!-- Here is Nav -->
+  <section class="nav">
         <nav class="navbar navbar-expand-lg navbar-light container">
             <a class="navbar-brand" href="index.html"><img width="79" src="img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +15,7 @@ Session::init();
                   <a class="nav-link home" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">MAXTAX APP</a>
+                  <a class="nav-link" href="maxtax-app.php">MAXTAX APP</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="credit-repair.php">CREDIT REPAIR</a>

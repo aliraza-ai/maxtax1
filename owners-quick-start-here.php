@@ -1,50 +1,17 @@
-<?php include('includes/header.php') ?>
-
-
-    <!-- Style area -->
-    <style>
-      .heading-w
-{
-    background-image: url("../img/download.png");
-    background-position: center center;
-    background-size: 100% 100%;
-    text-align: center;
-    color: white;
-    padding: 80px 0;
-    
-}
-h1
-{
-  font-weight: 600;
-  color:white;
-
-  
-}
-.heading-w .btn-outline-success
-    {
-        color: #282a7d !important;
-        border: #282a7d 1px solid;
-        font-family: 'Montserrat', sans-serif !important;
-        font-weight: 600;
-      
-        text-transform: uppercase;
-    }
-    .heading-w   .btn-outline-success:hover
-    {
-        background-color: #282a7d;
-        color: white !important;
-    }
-    .heading-w  .btn
-    {
-        background-color: white;
-        font-family: 'Montserrat', sans-serif !important;
-        color: #282a7d;
-        margin-top: 10px;
-        padding: 8px 34px;
-        font-size: 16px;
-    }
-    </style>
-    <!-- Style area -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="custom/style.css">
+    <link rel="stylesheet" href="custom/owners-quick.css">
+    <title>Owers Quick Start Here</title>
+</head>
+<body>
+    <!-- Here is Nav -->
+    <?php include('includes/navbar.php') ?>
 
     <!-- end of Nav  -->
 
@@ -312,4 +279,9 @@ h1
 
 
   
+ 
+  
+
+    
+
   <?php include('includes/footer.php') ?>
