@@ -1,6 +1,6 @@
-<?php
-include_once 'classes/session.php';
-Session::init();
+<?php session_start();
+// include_once 'classes/session.php';
+// Session::init();
 ?>
   <!-- Here is Nav -->
   <section class="nav">
@@ -84,7 +84,10 @@ Session::init();
         <a href="?action=logout"><b>Logout</b></a>
         <?php
         if (isset($_GET['action']) && $_GET['action']=="logout") {
-            session::destroy();
+            // session::destroy();
+            session_destroy();
+     echo '<script>window.location.replace("index.php")</script>';
+
         }
         ?>
       </div>

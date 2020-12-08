@@ -1,7 +1,9 @@
-<?php
-include_once 'classes/adminLogin.php';
-include_once 'classes/session.php';
-Session::checkLogin();
+<?php include_once 'classes/adminLogin.php';
+if(isset($_SESSION['adminlogin'])){
+  echo '<script>window.location.replace("index.php")</script>';
+}
+// include_once 'classes/session.php';
+// Session::checkLogin();
 $msg="";
 if(isset($_POST['login']))
 {

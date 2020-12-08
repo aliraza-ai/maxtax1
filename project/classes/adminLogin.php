@@ -1,6 +1,6 @@
-<?php
+<?php session_start();
 $filepath=realpath(dirname(__FILE__)); 
-include_once ($filepath.'/session.php');
+// include_once ($filepath.'/session.php');
 include_once ($filepath.'/database.php');
 include_once ($filepath.'/format.php');
 class adminlogin 
@@ -43,10 +43,11 @@ class adminlogin
          if($result!=false)
          {
              $value=$result->fetch_assoc();
-             session::set("adminlogin",true);
-             session::set("adminUser",$value['user_name']);
-             session::set("adminId",$value['id']);
-             session::set("adminPass",$value['user_pass']);
+            //  session::set("adminlogin",true);
+            //  session::set("adminUser",$value['user_name']);
+            //  session::set("adminId",$value['id']);
+            //  session::set("adminPass",$value['user_pass']);
+            $_SESSION['adminlogin']=true;
              header("Location:index.php");
            
          }
