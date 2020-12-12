@@ -1,0 +1,17 @@
+.heading-w
+      { 
+      background-image: url("../img/header2.jpg");
+      background-position: center center;
+      background-size: 100% 100%;
+      text-align: center;
+      color: white;
+      padding: 100px 0;
+      
+      }
+  h1
+  {
+    font-weight: 600;
+    color:white;
+  
+    
+  }

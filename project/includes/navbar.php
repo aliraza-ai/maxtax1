@@ -1,11 +1,13 @@
-<?php session_start();
+<?php include('includes/sessionfile.php') ?>
+<?php 
+// session_start();
 // include_once 'classes/session.php';
 // Session::init();
 ?>
   <!-- Here is Nav -->
   <section class="nav">
         <nav class="navbar navbar-expand-lg navbar-light container">
-            <a class="navbar-brand" href="index.html"><img width="79" src="img/logo.png"></a>
+            <a class="navbar-brand" href="index.php"><img width="79" src="img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,18 +31,18 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item my-sm-2" href="buy-tradelines.php">BUY TRADELINES</a>
-                    <a class="dropdown-item my-sm-2" href="#">PERSONAL TAXES</a>
+                    <a class="dropdown-item my-sm-2" href="index.php">PERSONAL TAXES</a>
                     <a class="dropdown-item my-sm-2" href="business-taxes.php">BUSSINESS TAXES</a>
                     <a class="dropdown-item my-sm-2" href="#">FRANCHISING</a>
                     <a class="dropdown-item my-sm-2" href="affiliate-login.php">AFFILIATE LOGIN</a>
-                    <a class="dropdown-item my-sm-2" href="#">ABOUT US</a>
-                    <a class="dropdown-item my-sm-2" href="#">CONTACT</a>
-                    <a class="dropdown-item my-sm-2" href="#">TAX PREP UPFRONT FEE</a>
-                    <a class="dropdown-item my-sm-2" href="#">MTA TAX SOFTWARE&reg;<br>(CROSSLINK)</a>
+                    <a class="dropdown-item my-sm-2" href="aboutus.php">ABOUT US</a>
+                    <a class="dropdown-item my-sm-2" href="contact.php">CONTACT</a>
+                    <a class="dropdown-item my-sm-2" href="https://maxtaxw2.com/store/product/1040ez-tax-preparation/">TAX PREP UPFRONT FEE</a>
+                    <a class="dropdown-item my-sm-2" href="https://maxtaxw2.com/store/product/mta-tax-software/">MTA TAX SOFTWARE&reg;<br>(CROSSLINK)</a>
                     <a class="dropdown-item my-sm-2" href="tax-preparer-backoffice.php">TAX PREPARER <br>BACKOFFICE</a>
                     <a class="dropdown-item my-sm-2" href="managers-backoffice.php">MANAGERS BACKOFFICE</a>
                     <a class="dropdown-item my-sm-2" href="owner-quick-start-here.php">ONWERS QUICK START HERE</a>
-                    <a class="dropdown-item my-sm-2" href="#">NEW CLIENT START HERE</a>
+                    <a class="dropdown-item my-sm-2" href="https://form.jotform.com/200476597644061">NEW CLIENT START HERE</a>
                   </div>
                 </li>
               
@@ -49,7 +51,15 @@
                   <?php
                   if(isset($_SESSION['adminlogin'])){ ?>
                     <a class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal" href="#">MY ACCOUNT</a>&nbsp;&nbsp;&nbsp;
-                    <a class="btn btn-outline-success my-2 my-sm-0" href="#">CART (0)</a>
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="?action=logout">LOGOUT</a>
+                            <?php
+        if (isset($_GET['action']) && $_GET['action']=="logout") {
+            // session::destroy();
+            session_destroy();
+     echo '<script>window.location.replace("index.php")</script>';
+
+        }
+        ?>
 
                     
                   <?php }else{ ?>
@@ -81,15 +91,8 @@
         <a class="btn btn-outline-success d-block my-sm-1" href="managers-backoffice.php">MANAGERS BACKOFFICE</a>
         <a class="btn btn-outline-success d-block my-sm-1" href="owners-quick-start-here.php">OWNERS QUICK START HERE</a>
         <a class="btn btn-outline-success d-block my-sm-1" href="tax-preparer-backoffice.php">TAX PREPARER BACKOFFICE</a>
-        <a href="?action=logout"><b>Logout</b></a>
-        <?php
-        if (isset($_GET['action']) && $_GET['action']=="logout") {
-            // session::destroy();
-            session_destroy();
-     echo '<script>window.location.replace("index.php")</script>';
+        <!--<a href="?action=logout"><b>Logout</b></a>-->
 
-        }
-        ?>
       </div>
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -2,9 +2,9 @@
 
 Class Database{
  public $host   = "localhost";
- public $user   = "root";
- public $pass   = "";
- public $dbname = "maxtax";
+ public $user   = "proenvi1_protech";
+ public $pass   = "protech1234";
+ public $dbname = "proenvi1_maxtax";
  
  
  public $link;

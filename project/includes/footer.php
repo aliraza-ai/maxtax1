@@ -7,7 +7,7 @@
                             <div class="col-md-3" >
                                <center> <img src="img/logo.png" width="170" alt=""></center>
                                 <p class="text-justify about">
-                                    Suspendisse pellentesque nunc tempor consequat iaculis. Nam a libero in justo imperdiet lacinia.
+                                    MaxTax will get you the most for your personal refund and the most out of your business.
                                 </p>
                             </div>
                             <div class="col-md-3 g">
@@ -39,9 +39,9 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                       <div class="me"> <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="CONTACT US"></div>
-                       <div class="me"> <input class="btn btn-outline-success my-2 my-sm-0" type="submit"  value="COMPLAINT FORM"></div>
-                        <div class="me"> <input class="btn btn-outline-success my-2 my-sm-0" type="submit"  value="JOB APPLICATION"></div>
+                       <div class="me"> <a href="https://form.jotform.me/90063447808460"><input class="btn btn-outline-success my-2 my-sm-0" type="submit"  value="CONTACT US"></a></div>
+                       <div class="me"> <a href="https://form.jotform.me/90063447808460"><input class="btn btn-outline-success my-2 my-sm-0" type="submit"  value="COMPLAINT FORM"></a></div>
+                       <div class="me"> <a href="#"><input class="btn btn-outline-success my-2 my-sm-0" type="submit"  value="JOB APPLICATION"></a></div>
                         <br>
                         <div class="contact">
                             EMAIL:    support@maxtaxw2.com<br>
@@ -54,8 +54,6 @@
 
     </section>
     <!-- footer end -->
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script
@@ -80,5 +78,14 @@
 	});
 });
     </script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="custom/dist/js/lightgallery-all.min.js"></script>
+        <script src="custom/lib/jquery.mousewheel.min.js"></script>
   </body>
 </html>

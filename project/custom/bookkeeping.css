@@ -1,0 +1,17 @@
+.heading-w
+{ 
+background-image: url("../img/bg.jpg");
+background-position: center center;
+background-size: 100% 100%;
+text-align: center;
+color: white;
+padding: 250px 0;
+height: 600px;
+}
+h1
+{
+font-weight: 600;
+color:white;
+
+
+}
